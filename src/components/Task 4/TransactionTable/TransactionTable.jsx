@@ -1,9 +1,10 @@
-import { TableHead } from './TableHead';
-import { TransactionItem } from './TransactionItem';
+import { TableHead } from '../TableHead/TableHead';
+import { TransactionItem } from '../TransactionItem/TransactionItem';
+import { Table } from './TransactionTable.style';
 
 export const TransactionTable = ({ transList }) => {
   return (
-    <table>
+    <Table>
       <TableHead />
       <tbody>
         {transList.map(item => (
@@ -12,6 +13,6 @@ export const TransactionTable = ({ transList }) => {
           </tr>
         ))}
       </tbody>
-    </table>
+    </Table>
   );
 };
