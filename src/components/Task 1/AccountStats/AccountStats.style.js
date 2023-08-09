@@ -7,8 +7,6 @@ justify-content: center;
 `;
 
 export const Item = styled.li`
-    width: 75px;
-    height: 50px;
     background-color: #F8F8F8;
     border: 1px solid black;
     padding: 5px 10px;
