@@ -4,7 +4,7 @@ import { Title, Section, List, Item } from './StatList.style';
 export const StatList = ({ stats, title }) => {
   return (
     <Section>
-      <Title>{title}</Title>
+      {title && <Title>{title}</Title>}
       <List>
         {stats.map(stat => (
           <Item key={stat.id}>
