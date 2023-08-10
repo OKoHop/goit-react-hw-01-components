@@ -1,6 +1,6 @@
 import { Img, UserName, Tag, Location, DivCont } from './UserInfo.style';
 import { AccountStats } from '../AccountStats/AccountStats';
-import userData from '../user.json';
+import userData from '../../../data/user.json';
 
 export const UserInfo = ({ info: { username, tag, location, avatar } }) => {
   return (

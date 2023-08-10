@@ -1,10 +1,10 @@
 import { StatItems } from '../StatItems/StatItems';
 import { Title, Section, List, Item } from './StatList.style';
 
-export const StatList = ({ stats }) => {
+export const StatList = ({ stats, title }) => {
   return (
     <Section>
-      <Title>Upload stats</Title>
+      <Title>{title}</Title>
       <List>
         {stats.map(stat => (
           <Item key={stat.id}>
